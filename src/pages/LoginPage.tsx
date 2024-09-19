@@ -15,8 +15,8 @@ import { useAuth } from "@/hooks/useAuth";
 
 export const LoginPage = () => {
   const [credentials, setCredentials] = useState({
-    email: "ali@tonbul.com",
-    password: "Pickles121",
+    email: "",
+    password: "",
   });
   const [error, setError] = useState(false);
   const { login, token } = useAuth();
