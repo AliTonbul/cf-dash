@@ -9,7 +9,8 @@ export const ErrorPage = () => {
       <h1>Oops!</h1>
       <h2>Sorry, an unexpected error has occurred. 💩</h2>
       <p>
-        <i>{error.statusText || error.message}</i>
+        {/* @ts-expect-error  blbla */}
+        <i>{error?.statusText || error?.message}</i>
       </p>
     </div>
   );
