@@ -31,7 +31,7 @@ export const LoginPage = () => {
   const handleLogin = async () => {
     // validate input
     // login
-    const res = await apiFetch<{ token: string }>("/api/user/login", {
+    const res = await apiFetch<{ token: string }>("/user/login", {
       method: "post",
       body: credentials,
     });
